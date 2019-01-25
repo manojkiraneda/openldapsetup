@@ -338,7 +338,7 @@ Next, we can adjust the global configuration file for the LDAP utilities to poin
 sudo nano /etc/ldap/ldap.conf
 ```
 
-Find the TLS_CACERT option and set it to the ca_certs.pem file:``/etc/ldap/ldap.conf`
+Find the TLS_CACERT option and set it to the ca_certs.pem file:`/etc/ldap/ldap.conf`
 
 ```
 . . .
