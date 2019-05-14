@@ -349,3 +349,13 @@ TLS_CACERT /etc/ldap/ca_certs.pem
 ```
 
 Save and close the file when you are finished.
+
+#### Client Autentication:
+
+We need to make a change in the slapd confiuration to make sure it demands the client to produce a certificate.This can be done by including the following flag into the slapd.conf.
+
+```bash
+olcTLSVerifyClient : Demand
+```
+
+And we should also make changes to point the client certificate in the nslcd.conf.
